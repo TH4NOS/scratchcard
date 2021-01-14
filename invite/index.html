@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Digital Scratch Card</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="/script2.js" defer></script>
+    
+    <script>
+      function start() {
+        init();
+        init2();
+      }
+    </script>
+
+  </head>
+  <body onload="start()">
+    <div class="outer-container2 mobile">
+      <div class="container" id="js-container2">
+        <canvas class="canvas" id="js-canvas2" width="300" height="300"></canvas>
+        <img
+          class="secondLayer2"
+          src="https://cdn.glitch.com/b908c036-7c18-4666-9e8d-8b63a44cee4b%2F5.jpg?v=1610295137027"
+          width="300"
+          height="300"
+          style="visibility: hidden;"
+        />
+      </div>
+    </div>
+    <div class="outer-container web">
+      <div class="container" id="js-container">
+        <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
+        <img
+          class="secondLayer"
+          src="https://cdn.glitch.com/b908c036-7c18-4666-9e8d-8b63a44cee4b%2FDigital%20Scratch%20Card-03%20with%20RSVP.jpg?v=1610021347624"
+          width="300"
+          height="300"
+          style="visibility: hidden;"
+        />
+      </div>
+    </div>
+  </body>
+</html>

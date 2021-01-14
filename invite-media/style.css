@@ -1,0 +1,66 @@
+body, html, * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+.web, .mobile {
+  display: none;
+}
+
+.outer-container {
+  width: calc((90vh*16)/9);
+  height: 90vh;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.outer-container2 {
+  width: calc((90vh*9)/16);
+  height: 90vh;
+  //margin: auto;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.secondLayer, .secondLayer2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (orientation : portrait) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media only screen and (orientation : landscape) {
+  .web {
+    display: block;
+  }
+}
